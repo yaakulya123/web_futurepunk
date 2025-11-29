@@ -207,12 +207,12 @@ def clean_response(response: str) -> str:
     return response
 
 
-if __name__ == '__main__':
-    # Initialize clients
-    init_llm()
-    init_tts()
+# Initialize clients when module is imported (for Vercel)
+init_llm()
+init_tts()
 
-    # Run the Flask app
+if __name__ == '__main__':
+    # Run the Flask app locally
     print("\n=== THE CONCH WEB APPLICATION ===")
     print("Starting server...")
     print("Open http://localhost:8080 in your browser\n")
