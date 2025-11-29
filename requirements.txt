@@ -1,12 +1,16 @@
-requests>=2.31.0
-python-dotenv>=1.0.0
-rich>=13.7.0
-anthropic>=0.18.0
-murf>=0.3.0
-httpx>=0.24.0
+# Core Flask dependencies
+flask==3.0.0
+flask-cors==4.0.0
 
-# Speech-to-Text (optional - only needed if STT_ENABLED=true)
-openai-whisper>=20231117
-sounddevice>=0.4.6
-soundfile>=0.12.1
-numpy>=1.24.0
+# LLM backends
+anthropic==0.45.0
+requests==2.31.0
+
+# TTS
+murf==1.0.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# HTTP client
+httpx==0.25.2

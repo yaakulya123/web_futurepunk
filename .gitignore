@@ -1,6 +1,8 @@
 # Environment variables (contains API keys)
 .env
 web_app/.env
+vercel_env*
+*.env
 
 # Python
 __pycache__/
