@@ -47,6 +47,24 @@ def init_tts():
 def index():
     return render_template('index.html')
 
+@app.route('/api/health', methods=['GET'])
+def health():
+    """Health check endpoint to verify environment setup"""
+    import os
+    return jsonify({
+        'status': 'ok',
+        'llm_client_initialized': llm_client is not None,
+        'llm_backend': llm_client.backend if llm_client else None,
+        'tts_client_initialized': tts_client is not None,
+        'tts_enabled': tts_client.enabled if tts_client else False,
+        'env_check': {
+            'ANTHROPIC_API_KEY': 'set' if os.getenv('ANTHROPIC_API_KEY') else 'missing',
+            'MURF_API_KEY': 'set' if os.getenv('MURF_API_KEY') else 'missing',
+            'LLM_BACKEND': os.getenv('LLM_BACKEND', 'not set'),
+            'TTS_ENABLED': os.getenv('TTS_ENABLED', 'not set')
+        }
+    })
+
 @app.route('/api/welcome', methods=['GET'])
 def get_welcome():
     global welcome_audio_cache
