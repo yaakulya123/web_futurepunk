@@ -1,5 +1,7 @@
 /* The Conch - Professional Terminal Aesthetic */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +21,6 @@
     --accent-green: #00ff00;
     --accent-dim: #00cc00;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 body {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
