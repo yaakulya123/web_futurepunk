@@ -1,0 +1,32 @@
+═══════════════════════════════════════════════════════
+                    THE CONCH
+        One-Command Setup and Run
+═══════════════════════════════════════════════════════
+
+RUN THIS COMMAND:
+
+    ./start.sh
+
+═══════════════════════════════════════════════════════
+
+WHAT HAPPENS:
+
+✓ First time: Installs everything (2-3 minutes)
+✓ After that: Starts instantly
+
+The app opens automatically and you can chat with The Conch!
+
+═══════════════════════════════════════════════════════
+
+TO EXIT:
+
+Type: exit
+Or press: Ctrl+C
+
+═══════════════════════════════════════════════════════
+
+THAT'S IT!
+
+No other setup needed. Just run ./start.sh every time.
+
+═══════════════════════════════════════════════════════

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Conch - Amphitopia Cultural Preservation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Start Overlay -->
+    <div id="startOverlay" class="start-overlay">
+        <div class="start-content">
+            <h1 class="start-title">THE CONCH</h1>
+            <p class="start-subtitle">Amphitopia Cultural Preservation Archive</p>
+            <button id="startButton" class="start-button">ENTER ARCHIVE</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="title-container">
+                <h1 class="title">THE CONCH</h1>
+                <p class="subtitle">Amphitopia Cultural Preservation Archive · Year 2080</p>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-container" id="chatContainer">
+            <!-- Welcome message will be inserted here -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input
+                    type="text"
+                    id="messageInput"
+                    class="message-input"
+                    placeholder="> Ask the Conch about the surface world..."
+                    autocomplete="off"
+                >
+                <div class="button-group">
+                    <button id="voiceButton" class="voice-button" title="Click to record for 5 seconds">
+                        SPEAK
+                    </button>
+                    <button id="sendButton" class="send-button">
+                        SEND
+                    </button>
+                </div>
+            </div>
+            <p class="hint">Click SPEAK to record for 5 seconds · Type 'exit', 'quit', 'bye', or 'goodbye' to end</p>
+        </div>
+    </div>
+
+    <!-- Typing Indicator Template -->
+    <template id="typingIndicatorTemplate">
+        <div class="message conch-message typing-indicator">
+            <div class="message-content">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+            </div>
+        </div>
+    </template>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
