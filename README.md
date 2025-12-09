@@ -1,6 +1,6 @@
 # The Conch: A Cultural Preservation Experience
 
-A futuristic CLI chat application featuring an intelligent conch shell that preserves cultural heritage for the residents of Amphitopia, an underwater colony beneath the Arabian Sea in 2080. The conch bridges the knowledge gap between generations, explaining land-based concepts to those who only know life underwater.
+A futuristic CLI chat software featuring an intelligent conch shell that preserves cultural heritage for the residents of Amphitopia, an underwater colony beneath the Arabian Sea in 2080. The conch bridges the knowledge gap between generations, explaining land-based concepts to those who only know life underwater.
 
 ## The Story
 
