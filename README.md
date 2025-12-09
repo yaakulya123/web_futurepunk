@@ -298,9 +298,3 @@ This project explores themes of:
 - The gap between lived experience and inherited knowledge
 - How meaning shifts when context fundamentally changes
 - The role of technology in preserving heritage
-
-## Credits
-
-- **Worldbuilding**: Based on the Amphitopia underwater colony concept
-- **Character Design**: The Conch as a cultural preservation device
-- **Powered by**: Python, Rich library, and various LLM backends
